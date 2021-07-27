@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ehya- SignIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+        <link rel="icon" href="Logo.svg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            const togglebutton = document.getElementById('toggle-button');
+            const navigationlist = document.getElementById('navigation-list');
+
+            togglebutton.addEventListener('click',() =>{
+                list.classList.toggle('active');
+            })
+        </script>
+    </head>
+    <body>
+        <nav class="header" >
+            <div class="logo">
+                <img src="Logo.svg" alt="Ehya" class="icon">
+            </div>
+            <ul class="list" id="navigation-list">
+                <li class="item"><a href="error.html">Home</a></li>
+                <li class="item"><a href="error.html">Landing</a></li>
+                <li class="item"><a href="error.html">Pages</a></li>
+                <li class="item"><a href="error.html">Doc</a></li>
+                <li class="item"><a href="error.html">Help</a></li>
+                <li class="item"><button>Get it Now</button></li>   
+            </ul>
+            <div class="expand" id="toggle-button">
+                <div class="expand-part"></div>
+                <div class="expand-part"></div>
+                <div class="expand-part"></div>
+            </div>
+        </nav>
+        <section>
+            <div class="container">
+                <h1 style="font-size: 35px; font-family:Open Sans; font-style: normal; text-align: center;color: #183B56">Welcome Back.</h1>
+                <br>
+                <div>
+                    <button class="logo-button">
+                        <div>
+                            <img src="ggl.jpg" alt="" width="40px" height="40px"style="border-radius: 5px; border: 0px;">
+                        </div>
+                        <div style="flex-grow: 2;">
+                            Sign In with Google
+                        </div>
+                    </button>
+                </div>
+                <br>
+                <div style="display: flex;">
+                    <div>
+                        <div class="line" style="width:70px;"></div>
+                    </div>   
+                    <lable> Or, Signin with your Email </lable>
+                    <div>
+                        <div class="line" style="width:70px;"></div>
+                    </div>
+                </div>
+                <br>
+                <lable>Email Address</lable>              
+                <div><input type="email" id="mail" placeholder="Enter E-mail Address"></div>
+                
+                <lable>Password</lable>
+                <div><input type="password" id="password" placeholder="Enter password"></div>
+                
+                <div class="remember-box">
+                    <div><lable><input type="checkbox"> keep me sign in</lable></div> 
+                    <div><a href="forgotpassword.html">forget password?</a></div> 
+                </div>
+                <br>
+                <div>
+                    <button class="signin-button">Sign In</button>
+                </div>
+                <br>
+                <div style="color: grey; font-size: 13px;">Don't have an Account? <a href="ehya_signup.html">Sign Up</a></div>
+            </div>
+        </section>
+    </body>
+</html>
