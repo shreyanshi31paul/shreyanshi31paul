@@ -181,6 +181,10 @@ lable{
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+.down{
+    transform: rotate(180deg);
+  -webkit-transform: rotate(135deg);
+}
 .error-division{
     position: absolute;
     width: 100%;
